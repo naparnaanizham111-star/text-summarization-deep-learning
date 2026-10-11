@@ -1,33 +1,65 @@
-# Text Summarization Using Deep Learning
+ Text Summarization Using Deep Learning
 
-A deep learning project for automatically generating concise summaries from lengthy text using Transformer-based models.
+ 1. Project Overview
+This project implements an abstractive text summarization system using the T5-small Transformer model. The model generates concise summaries from longer text while attempting to preserve the main information.
 
-## Project Objective
+ 2. Objectives
+- Develop an automated text summarization system.
+- Fine-tune the T5-small model using the CNN/DailyMail dataset.
+- Evaluate generated summaries using ROUGE metrics.
+- Provide a simple user interface using Streamlit.
 
-The objective of this project is to develop an abstractive text summarization system that can understand the important information in a document and generate a meaningful summary.
+ 3. Technologies Used
+- Python
+- PyTorch
+- Hugging Face Transformers
+- T5-small
+- CNN/DailyMail dataset
+- ROUGE evaluation metrics
+- Streamlit
+- Matplotlib
 
-## Technologies
+ 4. Project Workflow
+Dataset Preparation → Text Preprocessing → Model Fine-Tuning → Evaluation → Summary Generation
 
-* Python
-* PyTorch
-* Hugging Face Transformers
-* T5
-* NLP
-* ROUGE
+5. Main Features
+- Abstractive text summarization.
+- Transformer-based text generation.
+- ROUGE-based evaluation.
+- Training and evaluation visualizations.
+- Streamlit interface for entering text and viewing summaries.
+- Chunking support for long input text, if enabled in the application.
 
-## Model
+6. Dataset
+The project uses the CNN/DailyMail dataset. The model was trained and evaluated using selected subsets of the dataset.
 
-The project uses a Transformer-based T5 model for abstractive text summarization.
+7. Evaluation
+The model is evaluated using ROUGE-1, ROUGE-2, and ROUGE-L. The evaluation results and plots are provided in the `results/` directory when available.
 
-## Project Status
+8. Installation
+Install the required Python libraries:
 
- Currently under development.
+```bash
+pip install -r requirements.txt
+```
 
-## Future Work
+9. Running the Application
+From the repository root directory, run:
 
-* Dataset preparation
-* Text preprocessing
-* Model fine-tuning
-* Summary generation
-* ROUGE evaluatio
+```bash
+streamlit run app/app.py
+```
 
+Ensure that the trained model is available at the path configured in `app/app.py`.
+
+10. Project Structure
+- `notebooks/` — Model development, training and evaluation.
+- `app/` — Streamlit application.
+- `results/` — Evaluation results and plots.
+- `report/` — Final project report.
+- `requirements.txt` — Required Python libraries.
+
+11. Future Scope
+- Improve summary quality and evaluation.
+- Support additional document formats.
+- Explore deployment as a web application.
