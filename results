@@ -1,0 +1,5 @@
+metric,value
+test_loss,2.1367173195
+test_rouge1,0.3096390295
+test_rouge2,0.1203343581
+test_rougeL,0.2223813973
